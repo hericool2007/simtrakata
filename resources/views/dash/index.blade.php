@@ -30,7 +30,7 @@
                 <!-- Main row -->
                 <div class="row">
                     <div class="col-lg-7">
-
+                        @yield('container')
                     </div>
                 </div>
                 <!-- /.row (main row) -->

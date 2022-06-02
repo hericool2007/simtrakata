@@ -69,7 +69,7 @@
                 </ul>
             </li>
 
-            <li class="treeview">
+            <li class="active treeview">
                 <a href="#">
                     <i class="fa fa-folder"></i>
                     <span>Master Data</span>
@@ -81,7 +81,7 @@
                     <li><a href="#"><i class="fa fa-circle-o"></i> SP2D</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> Rincian SP2D</a></li>
                     <li><a href="#"><i class="fa fa-circle-o"></i> Anggaran</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Jenis Pajak</a></li>
+                    <li><a href="/rekening"><i class="fa fa-circle-o"></i> Jenis Pajak</a></li>
                 </ul>
             </li>
     </section>

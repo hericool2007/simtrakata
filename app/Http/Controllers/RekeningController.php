@@ -14,7 +14,7 @@ class RekeningController extends Controller
      */
     public function index()
     {
-        //
+        return view('rekening.index', ['data' => Rekening::paginate(10)->withQueryString()]);
     }
 
     /**

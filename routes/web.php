@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RekeningController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Route::post('/login',[LoginController::class,'authenticate']);
 Route::get('/logout',[LoginController::class,'logout']);
 Route::get('/dash', function() {
     return view('dash.index');})->middleware('auth');
+Route::resource('/rekening',RekeningController::class)->middleware('auth');
