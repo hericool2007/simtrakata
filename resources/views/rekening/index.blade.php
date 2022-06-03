@@ -40,15 +40,15 @@
                                 <td class="text-center">
                                     <div class="btn-group">
                                         {{-- Fungsi Edits --}}
-                                        <a href="/rekening/{{ $d->id }}/edit" class="btn btn-warning">
+                                        <a href="/rekening/{{ $d->id }}/edit" class="btn btn-sm btn-warning">
                                             <i class="fa fa-pencil"></i> Edit</a>
 
                                         {{-- Fungsi Hapus --}}
-                                        <form action="/rekening/{{ $d->id }}" method="post" class="inline">
+                                        <form action="/rekening/{{ $d->id }}" method="post" class="inline border-0">
                                             @method('delete')
                                             @csrf
 
-                                            <button type="button" class="btn btn-danger"
+                                            <button type="button" class="btn btn-sm btn-danger"
                                                 onclick="return confirm('Data Akan Dihapus?')">
                                                 <i class="fa fa-trash-o"></i> Hapus
                                             </button>
