@@ -14,7 +14,10 @@ class RekeningController extends Controller
      */
     public function index()
     {
-        return view('rekening.index', ['data' => Rekening::paginate(10)->withQueryString()]);
+        return view('rekening.index', [
+            'judul' => 'Jenis Pajak',
+            'data' => Rekening::where('pajak', 'like','%'.request('cari').'%')->paginate(10)->withQueryString()
+        ]);
     }
 
     /**

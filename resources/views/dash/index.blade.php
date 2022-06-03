@@ -16,12 +16,12 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Dashboard
+                    {{ $judul }}
                     {{-- <small>Control panel</small> --}}
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="/dash"><i class="fa fa-dashboard"></i> Home</a></li>
-                    <li class="active">Dashboard</li>
+                    <li class="active">{{ $judul }}</li>
                 </ol>
             </section>
 
@@ -29,7 +29,7 @@
             <section class="content">
                 <!-- Main row -->
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-12">
                         @yield('container')
                     </div>
                 </div>

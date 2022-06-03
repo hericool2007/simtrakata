@@ -26,5 +26,5 @@ Route::get('/login',[LoginController::class,'index'])->name('login')->middleware
 Route::post('/login',[LoginController::class,'authenticate']);
 Route::get('/logout',[LoginController::class,'logout']);
 Route::get('/dash', function() {
-    return view('dash.index');})->middleware('auth');
+    return view('dash.index',['judul'=>'Dashboard']);})->middleware('auth');
 Route::resource('/rekening',RekeningController::class)->middleware('auth');
